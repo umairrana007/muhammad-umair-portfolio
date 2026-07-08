@@ -1,0 +1,8 @@
+# Ignore all files and directories by default
+*
+
+# Allow index.html, .gitignore, and assets folder
+!index.html
+!.gitignore
+!assets/
+!assets/**

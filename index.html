@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Umair — Techno-Functional Consultant | IBM Maximo & SAP Specialist</title>
+<meta name="description" content="Muhammad Umair — Techno-Functional Consultant with 9+ years of expertise in IBM Maximo, SAP PM/MM, BIRT Reports (Arabic RTL), and Enterprise Asset Management.">
+<meta property="og:title" content="Muhammad Umair — Techno-Functional Consultant">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{
+--bg:#060612;--bg2:#0c0c1d;--bg3:#12122a;
+--card:rgba(18,18,42,.6);--glass:rgba(12,12,29,.8);--gb:rgba(255,255,255,.04);
+--g1:#00e59a;--g2:#4a6cf7;--g3:#8b5cf6;--g4:#ec4899;--g5:#ff6b35;--g6:#06b6d4;--g7:#fbbf24;--g8:#ef4444;
+--tw:#f0f0ff;--td:#9ca3af;--tm:#6b7280;
+--bd:rgba(255,255,255,.06);--bda:rgba(0,229,154,.3);
+--r:16px;--rs:10px;--rx:6px;
+--accent:#00e59a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:var(--accent) var(--bg)}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--tw);overflow-x:hidden}
+
+.sp-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--g2),var(--g3));z-index:100001;width:0%}
+
+.cd{width:8px;height:8px;background:var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:99999;mix-blend-mode:difference}
+.cr{width:40px;height:40px;border:1.5px solid var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:99998;opacity:.5;transition:all .15s ease}
+.cr.h{width:60px;height:60px;border-color:var(--g2);opacity:1;background:rgba(74,108,247,.06)}
+
+.splash{position:fixed;inset:0;z-index:100000;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--bg);transition:opacity 1s ease,transform 1s ease}
+.splash.exit{opacity:0;transform:scale(1.15);pointer-events:none}
+.spo{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;animation:spP 6s ease-in-out infinite}
+.spo1{width:600px;height:600px;background:rgba(0,229,154,.06);top:-20%;right:-15%}
+.spo2{width:500px;height:500px;background:rgba(74,108,247,.05);bottom:-20%;left:-15%;animation-delay:-3s}
+.spo3{width:350px;height:350px;background:rgba(139,92,246,.04);top:50%;left:40%;animation-delay:-1.5s}
+@keyframes spP{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.15);opacity:1}}
+#spP{position:absolute;inset:0;z-index:0;pointer-events:none}
+.sp-noise{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:256px}
+.sp-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:50px 50px;mask-image:radial-gradient(ellipse at 50% 50%,black 20%,transparent 65%)}
+.sp-c{position:relative;z-index:10;display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px}
+
+.sp-avatar{position:relative;margin-bottom:10px;opacity:0;transform:scale(.5) translateY(30px);animation:sIn 1.2s cubic-bezier(.16,1,.3,1) .3s forwards}
+@keyframes sIn{to{opacity:1;transform:scale(1) translateY(0)}}
+.sp-avatar-ring{position:absolute;inset:-8px;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),var(--g2),var(--g3),var(--accent));animation:rr 4s linear infinite;z-index:-1}
+.sp-avatar-ring::after{content:'';position:absolute;inset:4px;border-radius:50%;background:var(--bg)}
+@keyframes rr{to{transform:rotate(360deg)}}
+.sp-avatar img{width:170px;height:170px;border-radius:50%;object-fit:cover;position:relative;z-index:1;border:4px solid var(--bg)}
+.sp-avatar-glow{position:absolute;inset:-25px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,154,.12),transparent 70%);z-index:-2;animation:gp 3s ease-in-out infinite}
+@keyframes gp{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.1)}}
+
+.sp-welcome{font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:10px;text-transform:uppercase;color:var(--td);opacity:0;transform:translateY(20px);animation:sIn .8s ease .8s forwards}
+.sp-name{font-family:'Orbitron',sans-serif;font-size:clamp(2rem,6vw,3.5rem);font-weight:900;line-height:1.1;letter-spacing:3px;background:linear-gradient(135deg,var(--accent) 0%,#fff 40%,var(--accent) 60%,#4ae5c0 100%);background-size:200% 200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:sIn .8s ease 1s forwards,shim 3s ease-in-out infinite 1.8s;opacity:0;transform:translateY(20px)}
+@keyframes shim{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.sp-role{font-size:1rem;color:var(--td);letter-spacing:3px;text-transform:uppercase;opacity:0;transform:translateY(20px);animation:sIn .8s ease 1.2s forwards}
+.sp-bw{margin-top:20px;opacity:0;transform:translateY(20px);animation:sIn .8s ease 1.4s forwards;position:relative}
+.sp-bg2{position:absolute;inset:-8px;border-radius:60px;background:linear-gradient(135deg,var(--accent),var(--g2));filter:blur(20px);opacity:.4;animation:bgP 2.5s ease-in-out infinite;z-index:-1}
+@keyframes bgP{0%,100%{opacity:.3;transform:scale(1)}50%{opacity:.6;transform:scale(1.05)}}
+.sp-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 50px;background:linear-gradient(135deg,var(--accent),#00c48c);color:var(--bg);border:none;border-radius:60px;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:1px;cursor:pointer;position:relative;overflow:hidden;transition:all .4s ease;box-shadow:0 8px 40px rgba(0,229,154,.3)}
+.sp-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 50px rgba(0,229,154,.5)}
+.sp-btn .bi{transition:transform .3s ease}.sp-btn:hover .bi{transform:translateX(4px)}
+.sp-btn .rip{position:absolute;border-radius:50%;background:rgba(255,255,255,.3);transform:scale(0);animation:ripA .6s ease-out;pointer-events:none}
+@keyframes ripA{to{transform:scale(4);opacity:0}}
+.sp-ld{position:absolute;bottom:70px;left:50%;transform:translateX(-50%);font-size:.75rem;color:var(--td);letter-spacing:3px;text-transform:uppercase;opacity:0;transition:opacity .5s ease;white-space:nowrap}
+.sp-ld.v{opacity:1}
+.sp-ld .dots::after{content:'';animation:lD 1.5s steps(4,end) infinite}
+@keyframes lD{0%{content:''}25%{content:'.'}50%{content:'..'}75%{content:'...'}}
+.sp-av{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;align-items:flex-end;gap:3px;height:20px;opacity:0;transition:opacity .5s ease}
+.sp-av.p{opacity:1}
+.sp-av .b{width:3px;background:linear-gradient(to top,var(--accent),var(--g2));border-radius:2px;height:3px}
+.sp-av.p .b{animation:aB .8s ease-in-out infinite}
+.sp-av.p .b:nth-child(1){animation-delay:0s}.sp-av.p .b:nth-child(2){animation-delay:.1s}.sp-av.p .b:nth-child(3){animation-delay:.2s}.sp-av.p .b:nth-child(4){animation-delay:.3s}.sp-av.p .b:nth-child(5){animation-delay:.15s}
+@keyframes aB{0%,100%{height:3px}50%{height:18px}}
+
+.intro{position:fixed;inset:0;z-index:90000;display:flex;flex-direction:column;background:var(--bg);opacity:0;visibility:hidden;transition:opacity .8s ease,visibility .8s ease;overflow:hidden}
+.intro.v{opacity:1;visibility:visible}
+.intro.exit{opacity:0;transform:scale(.95);pointer-events:none}
+#confC{position:absolute;inset:0;z-index:0;pointer-events:none}
+
+.in-nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:16px 50px;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--gb)}
+.in-logo{font-family:'Orbitron',sans-serif;font-size:1.15rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.in-nl{display:flex;align-items:center;gap:28px;list-style:none}
+.in-nl a{color:var(--td);text-decoration:none;font-size:.87rem;font-weight:500;transition:color .3s ease}
+.in-nl a:hover{color:var(--tw)}
+.in-hire{padding:10px 26px!important;background:var(--accent);color:var(--bg)!important;border-radius:8px;font-weight:600!important;box-shadow:0 0 20px rgba(0,229,154,.2)}
+.in-hire:hover{box-shadow:0 0 35px rgba(0,229,154,.4)!important;transform:translateY(-2px)}
+
+.in-body{position:relative;z-index:10;flex:1;display:flex;align-items:center;padding:0 60px;gap:60px}
+.in-img{flex:0 0 380px;position:relative;opacity:0;transform:translateX(-60px);transition:all 1s cubic-bezier(.16,1,.3,1) .3s}
+.intro.v .in-img{opacity:1;transform:translateX(0)}
+.in-img-w{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:3/4;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.in-img-w img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+.intro.v .in-img-w img{transform:scale(1.05)}
+.in-img-b{position:absolute;inset:-4px;border-radius:22px;z-index:1;pointer-events:none}
+.in-img-b::before{content:'';position:absolute;inset:0;border-radius:22px;padding:1.5px;background:linear-gradient(135deg,rgba(0,229,154,.35),rgba(74,108,247,.35),rgba(139,92,246,.35));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.in-img-gl{position:absolute;inset:-30px;border-radius:40px;background:radial-gradient(ellipse,rgba(0,229,154,.08),transparent 70%);z-index:-1;animation:igl 4s ease-in-out infinite}
+@keyframes igl{0%,100%{opacity:.5}50%{opacity:1}}
+
+.in-txt{flex:1;opacity:0;transform:translateY(40px);transition:all 1s cubic-bezier(.16,1,.3,1) .5s}
+.intro.v .in-txt{opacity:1;transform:translateY(0)}
+.in-tag{display:inline-block;padding:6px 16px;background:rgba(0,229,154,.1);border:1px solid var(--bda);border-radius:50px;font-size:.72rem;color:var(--accent);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.in-desc{font-size:clamp(1.05rem,1.8vw,1.25rem);color:var(--tw);line-height:1.85;max-width:560px;margin-bottom:32px}
+.in-desc .em{color:var(--accent);font-weight:600}
+.in-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.in-be{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:transparent;color:var(--tw);border:1.5px solid rgba(255,255,255,.12);border-radius:12px;font-size:.95rem;font-weight:500;font-family:'Inter',sans-serif;cursor:pointer;transition:all .3s ease}
+.in-be:hover{border-color:var(--accent);background:rgba(0,229,154,.06);transform:translateY(-2px)}
+.in-bh{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:var(--accent);color:var(--bg);border:none;border-radius:12px;font-size:.95rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:all .3s ease;box-shadow:0 0 25px rgba(0,229,154,.2)}
+.in-bh:hover{box-shadow:0 0 40px rgba(0,229,154,.4);transform:translateY(-2px)}
+.in-stats{display:flex;align-items:center;gap:40px}
+.isn{font-family:'Orbitron',sans-serif;font-size:1.5rem;font-weight:700;color:var(--accent);display:block;line-height:1.2}
+.isl{font-size:.7rem;color:var(--tm);text-transform:uppercase;letter-spacing:2.5px;margin-top:3px;display:block}
+.isd{width:1px;height:42px;background:rgba(255,255,255,.06)}
+
+.in-fabs{position:absolute;bottom:36px;right:40px;z-index:20;display:flex;flex-direction:column;gap:12px;opacity:0;transform:translateY(20px);transition:all .8s ease 1.2s}
+.intro.v .in-fabs{opacity:1;transform:translateY(0)}
+.in-fab{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.15rem;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 20px rgba(0,0,0,.3);border:none}
+.in-fab:hover{transform:scale(1.12)}
+.in-fab.chat{background:var(--accent);color:var(--bg)}.in-fab.dl{background:var(--g2);color:#fff}
+
+.mw{opacity:0;visibility:hidden;transition:opacity .8s ease .3s,visibility .8s ease .3s;overflow-y:auto;overflow-x:hidden;min-height:100vh}
+.mw.v{opacity:1;visibility:visible}
+.nov{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.02;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:256px}
+.grbg{position:fixed;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.015) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.015) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at 50% 50%,black 25%,transparent 65%)}
+#ptc{position:fixed;inset:0;z-index:0;pointer-events:none}
+.orb{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0;animation:oF 20s ease-in-out infinite}
+.orb1{width:500px;height:500px;background:rgba(0,229,160,.05);top:-10%;right:-10%}
+.orb2{width:400px;height:400px;background:rgba(0,184,255,.04);bottom:-10%;left:-10%;animation-delay:-7s}
+.orb3{width:300px;height:300px;background:rgba(255,107,53,.03);top:50%;left:50%;animation-delay:-14s}
+@keyframes oF{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(30px,-40px) scale(1.05)}50%{transform:translate(-20px,30px) scale(.95)}75%{transform:translate(40px,20px) scale(1.02)}}
+.mc{position:relative;z-index:2}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease}
+.nav.sc{padding:12px 40px;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--gb);box-shadow:0 4px 30px rgba(0,0,0,.2)}
+.nlogo{font-family:'Orbitron',sans-serif;font-size:1.2rem;font-weight:800;text-decoration:none;background:linear-gradient(135deg,var(--accent),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nls{display:flex;align-items:center;gap:30px;list-style:none}
+.nls a{color:var(--td);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .3s ease}
+.nls a:hover{color:var(--accent)}
+.ncta{padding:10px 22px;background:linear-gradient(135deg,var(--accent),#00c48c);color:var(--bg)!important;border-radius:var(--rx);font-weight:600!important;box-shadow:0 0 20px rgba(0,229,154,.2)}
+.ncta:hover{transform:translateY(-2px);box-shadow:0 0 35px rgba(0,229,154,.4)!important}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001;background:none;border:none;padding:5px}
+.ham span{width:26px;height:2px;background:var(--tw);transition:all .3s ease;display:block}
+.ham.on span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.ham.on span:nth-child(2){opacity:0}.ham.on span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mm{position:fixed;inset:0;background:rgba(6,6,18,.97);backdrop-filter:blur(30px);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;visibility:hidden;transition:all .4s ease}
+.mm.on{opacity:1;visibility:visible}
+.mm a{color:var(--tw);text-decoration:none;font-size:1.4rem;font-family:'Space Grotesk',sans-serif;font-weight:600;transition:color .3s ease}
+.mm a:hover{color:var(--accent)}
+
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 40px 80px}
+.hero-c{max-width:900px;text-align:center}
+.hb{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:rgba(0,229,154,.08);border:1px solid var(--bda);border-radius:50px;font-size:.8rem;color:var(--accent);font-weight:500;margin-bottom:30px;letter-spacing:1px;text-transform:uppercase;animation:fU .8s ease .3s both}
+.hb .dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:blk 2s ease-in-out infinite}
+@keyframes blk{0%,100%{opacity:1}50%{opacity:.3}}
+.ht{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.2rem,5vw,4rem);font-weight:700;line-height:1.15;margin-bottom:16px;animation:fU .8s ease .5s both}
+.ht .g1{background:linear-gradient(135deg,var(--accent),#00c48c);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ht .g2{background:linear-gradient(135deg,var(--g2),#6d8ffa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-photo{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);margin:0 auto 24px;display:block;box-shadow:0 0 40px rgba(0,229,154,.2);animation:fU .8s ease .4s both}
+.hs{font-size:1.1rem;color:var(--td);line-height:1.75;max-width:620px;margin:0 auto 40px;animation:fU .8s ease .7s both}
+.hbtns{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;animation:fU .8s ease .9s both}
+.bp{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;background:linear-gradient(135deg,var(--accent),#00c48c);color:var(--bg);border:none;border-radius:var(--rs);font-size:1rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:all .3s ease;box-shadow:0 0 30px rgba(0,229,160,.2)}
+.bp:hover{transform:translateY(-3px);box-shadow:0 0 50px rgba(0,229,160,.35)}
+.bs{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;background:transparent;color:var(--tw);border:1px solid var(--bd);border-radius:var(--rs);font-size:1rem;font-weight:500;font-family:'Inter',sans-serif;cursor:pointer;transition:all .3s ease}
+.bs:hover{border-color:var(--accent);background:rgba(0,229,160,.06);transform:translateY(-3px)}
+@keyframes fU{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+section{padding:100px 40px;position:relative}
+.sh{text-align:center;margin-bottom:70px}
+.stag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;background:rgba(0,229,154,.08);border:1px solid var(--bda);border-radius:50px;font-size:.72rem;color:var(--accent);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.stl{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:14px}
+.sdesc{font-size:1rem;color:var(--td);max-width:580px;margin:0 auto;line-height:1.7}
+.rv{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.rvl{opacity:0;transform:translateX(-50px);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.rvr{opacity:0;transform:translateX(50px);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.rvs{opacity:0;transform:scale(.9);transition:all .8s cubic-bezier(.16,1,.3,1)}
+.rv.active,.rvl.active,.rvr.active,.rvs.active{opacity:1;transform:none}
+
+.sts{background:var(--bg2);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+.stsg{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stc{text-align:center;padding:30px 20px}
+.stc .num{font-family:'Orbitron',sans-serif;font-size:2.2rem;font-weight:700;color:var(--accent);display:block;margin-bottom:6px}
+.stc .lbl{font-size:.75rem;color:var(--tm);text-transform:uppercase;letter-spacing:2px}
+
+.abg{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:center}
+.abi{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.abi img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.abi:hover img{transform:scale(1.05)}
+.abi::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,229,154,.05),rgba(74,108,247,.05));pointer-events:none}
+.abt h2{font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;margin-bottom:16px}
+.abt .role{color:var(--accent);font-size:.9rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:16px;display:block}
+.abt p{color:var(--td);line-height:1.8;margin-bottom:16px;font-size:.95rem}
+.abt .info-row{display:flex;gap:20px;margin-top:20px;flex-wrap:wrap}
+.abt .info-item{display:flex;align-items:center;gap:8px;font-size:.88rem;color:var(--td)}
+.abt .info-item i{color:var(--accent);width:16px}
+.abs{display:flex;gap:12px;margin-top:24px}
+.abs a{width:42px;height:42px;border-radius:50%;border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;color:var(--td);transition:all .3s ease;text-decoration:none}
+.abs a:hover{background:rgba(0,229,154,.1);border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+
+.skgrid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.skc{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--rs);padding:24px;transition:all .3s ease}
+.skc:hover{border-color:var(--bda);transform:translateY(-4px)}
+.skc h4{font-size:.9rem;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.skc h4 i{color:var(--accent);font-size:.85rem}
+.skbar{height:8px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden;margin-bottom:12px}
+.skfill{height:100%;border-radius:4px;transition:width 1.5s cubic-bezier(.16,1,.3,1);width:0%}
+.skc:hover .skfill{width:var(--w)}
+.sf1{background:linear-gradient(90deg,var(--accent),#00c48c)}.sf2{background:linear-gradient(90deg,var(--g2),#6d8ffa)}.sf3{background:linear-gradient(90deg,var(--g3),#a78bfa)}.sf4{background:linear-gradient(90deg,var(--g5),#ff8f5e)}.sf5{background:linear-gradient(90deg,var(--g4),#f472b6)}.sf6{background:linear-gradient(90deg,var(--g6),#22d3ee)}
+
+.exl{max-width:900px;margin:0 auto}
+.exi{display:flex;gap:24px;margin-bottom:30px;position:relative;padding-left:30px}
+.exi::before{content:'';position:absolute;left:6px;top:28px;bottom:-30px;width:2px;background:var(--bd)}
+.exi:last-child::before{display:none}
+.exdot{width:14px;height:14px;min-width:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg);position:absolute;left:0;top:6px;z-index:2;box-shadow:0 0 12px rgba(0,229,154,.3)}
+.exc{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:28px;flex:1;transition:all .3s ease}
+.exc:hover{border-color:var(--bda);box-shadow:0 0 30px rgba(0,229,154,.06)}
+.exc .date{font-size:.75rem;color:var(--accent);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.exc h3{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:4px}
+.exc .company{font-size:.85rem;color:var(--g2);margin-bottom:10px}
+.exc p,.exc ul{color:var(--td);font-size:.88rem;line-height:1.7}
+.exc ul{list-style:none;padding:0}
+.exc ul li{padding:3px 0;padding-left:18px;position:relative}
+.exc ul li::before{content:'▹';position:absolute;left:0;color:var(--accent)}
+
+.edg{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.edc{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:28px;text-align:center;transition:all .3s ease}
+.edc:hover{border-color:var(--bda);transform:translateY(-4px)}
+.edc .edicon{font-size:2rem;color:var(--accent);margin-bottom:14px}
+.edc .year{font-size:.72rem;color:var(--tm);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.edc h4{font-size:1rem;font-weight:600;margin-bottom:6px}
+.edc p{color:var(--td);font-size:.85rem;line-height:1.6}
+
+.srg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1200px;margin:0 auto}
+.src{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:36px;position:relative;overflow:hidden;transition:all .4s ease;cursor:pointer}
+.src::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--g2));transform:scaleX(0);transition:transform .4s ease;transform-origin:left}
+.src:hover::before{transform:scaleX(1)}
+.src:hover{border-color:var(--bda);transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.sri{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:20px;transition:transform .3s ease}
+.src:hover .sri{transform:scale(1.1)}
+.src h3{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:10px;transition:color .3s ease}
+.src:hover h3{color:var(--accent)}
+.src p{color:var(--td);font-size:.88rem;line-height:1.7}
+.src .ar{position:absolute;bottom:36px;right:36px;width:34px;height:34px;border-radius:50%;border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;color:var(--tm);font-size:.75rem;transition:all .3s ease}
+.src:hover .ar{background:var(--accent);border-color:var(--accent);color:var(--bg);transform:translate(4px,-4px)}
+
+.prg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px}
+.prc{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:all .4s ease}
+.prc:hover{border-color:var(--bda);transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.prc-img{aspect-ratio:16/10;overflow:hidden;position:relative}
+.prc-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.prc:hover .prc-img img{transform:scale(1.08)}
+.prc-body{padding:24px}
+.prc-body .tag{display:inline-block;padding:3px 10px;background:rgba(0,229,154,.1);color:var(--accent);font-size:.68rem;font-weight:600;border-radius:50px;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.prc-body h4{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+.prc-body p{color:var(--td);font-size:.85rem;line-height:1.6}
+.prc-body .client{font-size:.78rem;color:var(--g2);margin-top:8px;font-weight:500}
+
+.ttg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px}
+.ttc{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:32px;position:relative;transition:all .4s ease}
+.ttc:hover{border-color:var(--bda);transform:translateY(-5px)}
+.ttc .stars{color:var(--g7);font-size:.8rem;letter-spacing:2px;margin-bottom:14px;display:block}
+.ttc .qi{font-size:1.8rem;color:var(--accent);opacity:.25;margin-bottom:10px}
+.ttc .txt{color:var(--td);font-size:.92rem;line-height:1.8;margin-bottom:20px;font-style:italic}
+.tta{display:flex;align-items:center;gap:12px}
+.tta img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--bd)}
+.tta .nm{font-weight:600;font-size:.9rem}.tta .rl{font-size:.78rem;color:var(--tm)}
+
+.fqc{max-width:760px;margin:0 auto}
+.fqi{border:1px solid var(--bd);border-radius:var(--rs);margin-bottom:12px;overflow:hidden;background:var(--card);backdrop-filter:blur(10px);transition:border-color .3s ease}
+.fqi.on{border-color:var(--bda)}
+.fqq{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;font-weight:600;font-size:.95rem;transition:color .3s ease;user-select:none}
+.fqi.on .fqq{color:var(--accent)}
+.fqt{width:28px;height:28px;border-radius:50%;background:rgba(0,229,154,.1);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--accent);transition:transform .3s ease;flex-shrink:0}
+.fqi.on .fqt{transform:rotate(45deg)}
+.fqa{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .4s ease}
+.fqi.on .fqa{max-height:200px;padding:0 24px 20px}
+.fqa p{color:var(--td);font-size:.9rem;line-height:1.7}
+
+.ctab{max-width:800px;margin:0 auto;padding:80px 50px;background:linear-gradient(135deg,rgba(0,229,154,.06),rgba(74,108,247,.04));border:1px solid var(--bda);border-radius:24px;position:relative;overflow:hidden;text-align:center}
+.ctab::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(0,229,154,.04),transparent,rgba(74,108,247,.04),transparent);animation:ctaR 10s linear infinite}
+@keyframes ctaR{to{transform:rotate(360deg)}}
+.ctab>*{position:relative;z-index:2}
+.ctab h2{font-family:'Space Grotesk',sans-serif;font-size:2.2rem;font-weight:700;margin-bottom:14px}
+.ctab p{color:var(--td);font-size:1rem;margin-bottom:32px;line-height:1.7}
+
+.cgrid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:60px}
+.cinfo h3{font-family:'Space Grotesk',sans-serif;font-size:1.7rem;font-weight:700;margin-bottom:14px}
+.cinfo>p{color:var(--td);line-height:1.7;margin-bottom:28px;font-size:.95rem}
+.cmeth{display:flex;flex-direction:column;gap:16px}
+.cm{display:flex;align-items:center;gap:14px;padding:16px 18px;background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--rs);transition:all .3s ease}
+.cm:hover{border-color:var(--bda);transform:translateX(5px)}
+.cm .ci{width:42px;height:42px;min-width:42px;border-radius:12px;background:rgba(0,229,154,.1);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:.95rem}
+.cm .lb{font-size:.72rem;color:var(--tm);text-transform:uppercase;letter-spacing:1px}
+.cm .vl{font-weight:500;font-size:.92rem;margin-top:2px}
+.cform{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bd);border-radius:var(--r);padding:40px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.fgrp{margin-bottom:16px}
+.fgrp label{display:block;font-size:.78rem;color:var(--tm);margin-bottom:7px;text-transform:uppercase;letter-spacing:1px;font-weight:500}
+.fgrp input,.fgrp textarea,.fgrp select{width:100%;padding:13px 16px;background:rgba(6,6,18,.8);border:1px solid var(--bd);border-radius:var(--rx);color:var(--tw);font-size:.92rem;font-family:'Inter',sans-serif;transition:all .3s ease;outline:none}
+.fgrp input:focus,.fgrp textarea:focus{border-color:var(--accent);box-shadow:0 0 20px rgba(0,229,154,.08)}
+.fgrp textarea{resize:vertical;min-height:110px}
+.fgrp select option{background:var(--bg)}
+.fgrp .err{color:var(--g8);font-size:.75rem;margin-top:4px;display:none}
+.fgrp.inv input,.fgrp.inv textarea{border-color:var(--g8)}
+.fgrp.inv .err{display:block}
+.fsub{width:100%;padding:15px;background:linear-gradient(135deg,var(--accent),#00c48c);color:var(--bg);border:none;border-radius:var(--rs);font-size:1rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:all .3s ease;box-shadow:0 0 20px rgba(0,229,154,.2)}
+.fsub:hover{box-shadow:0 0 40px rgba(0,229,154,.35);transform:translateY(-2px)}
+.fsub.ld{pointer-events:none;opacity:.7}
+.fsub .spn{display:none;width:18px;height:18px;border:2px solid transparent;border-top-color:var(--bg);border-radius:50%;animation:spn .6s linear infinite}
+.fsub.ld .spn{display:inline-block}.fsub.ld .btx{display:none}
+@keyframes spn{to{transform:rotate(360deg)}}
+
+footer{background:var(--bg2);border-top:1px solid var(--bd);padding:60px 40px 30px}
+.ftg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:50px}
+.ftb .lo{font-family:'Orbitron',sans-serif;font-size:1.3rem;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px;display:block}
+.ftb p{color:var(--td);font-size:.88rem;line-height:1.7;margin-bottom:20px}
+.fts{display:flex;gap:10px}
+.fts a{width:40px;height:40px;border-radius:10px;border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;color:var(--td);transition:all .3s ease;text-decoration:none}
+.fts a:hover{background:rgba(0,229,154,.1);border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+.ftc h4{font-family:'Space Grotesk',sans-serif;font-size:.92rem;font-weight:600;margin-bottom:16px}
+.ftc a{display:block;color:var(--td);text-decoration:none;font-size:.85rem;padding:5px 0;transition:all .3s ease}
+.ftc a:hover{color:var(--accent);transform:translateX(4px)}
+.ftbt{max-width:1200px;margin:0 auto;padding-top:28px;border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.ftbt p{font-size:.8rem;color:var(--tm)}
+.ftbl{display:flex;gap:24px}
+.ftbl a{font-size:.8rem;color:var(--tm);text-decoration:none;transition:color .3s ease}
+.ftbl a:hover{color:var(--accent)}
+
+.mqs{padding:28px 0;overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);background:var(--bg2)}
+.mqt{display:flex;gap:60px;animation:mqs 35s linear infinite;width:max-content}
+.mqi{font-family:'Orbitron',sans-serif;font-size:1.1rem;font-weight:600;color:var(--tm);white-space:nowrap;display:flex;align-items:center;gap:20px}
+.mqi .s{width:7px;height:7px;background:var(--accent);border-radius:50%;opacity:.35}
+@keyframes mqs{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.toc{position:fixed;top:100px;right:30px;z-index:10000;display:flex;flex-direction:column;gap:10px}
+.tst{padding:14px 22px;background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--bda);border-radius:var(--rs);color:var(--tw);font-size:.9rem;display:flex;align-items:center;gap:10px;box-shadow:0 10px 40px rgba(0,0,0,.4);animation:tI .4s ease forwards;max-width:360px}
+.tst.rm{animation:tO .4s ease forwards}
+.tst i{color:var(--accent)}
+@keyframes tI{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes tO{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(40px)}}
+
+.at{position:fixed;bottom:30px;right:30px;z-index:1000;width:48px;height:48px;border-radius:50%;background:var(--card);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;color:var(--td);cursor:pointer;transition:all .3s ease}
+.at:hover{border-color:var(--accent);color:var(--accent)}
+.at.on{border-color:var(--accent);color:var(--accent);box-shadow:0 0 20px rgba(0,229,154,.2)}
+.abs2{display:flex;align-items:flex-end;gap:2px;height:16px}
+.abs2 span{width:3px;background:var(--accent);border-radius:1px;height:4px}
+.at.on .abs2 span{animation:abA .8s ease-in-out infinite}
+.abs2 span:nth-child(1){animation-delay:0s}.abs2 span:nth-child(2){animation-delay:.15s}.abs2 span:nth-child(3){animation-delay:.3s}.abs2 span:nth-child(4){animation-delay:.45s}
+@keyframes abA{0%,100%{height:4px}50%{height:16px}}
+.btt{position:fixed;bottom:30px;left:30px;z-index:1000;width:48px;height:48px;border-radius:50%;background:var(--card);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;color:var(--td);cursor:pointer;transition:all .3s ease;opacity:0;visibility:hidden;transform:translateY(20px)}
+.btt.v{opacity:1;visibility:visible;transform:translateY(0)}
+.btt:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-3px)}
+
+.dl-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;background:var(--g2);color:#fff;border:none;border-radius:12px;font-size:.95rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:all .3s ease;box-shadow:0 0 25px rgba(74,108,247,.2)}
+.dl-btn:hover{box-shadow:0 0 40px rgba(74,108,247,.4);transform:translateY(-2px)}
+
+@media(max-width:1024px){.abg,.cgrid{grid-template-columns:1fr}.ftg{grid-template-columns:1fr 1fr}.in-body{flex-direction:column;padding:0 30px;gap:30px}.in-img{flex:0 0 auto;width:240px}.stsg{grid-template-columns:repeat(2,1fr)}.edg{grid-template-columns:1fr}}
+@media(max-width:768px){body{cursor:auto}.cd,.cr{display:none}section{padding:70px 20px}.nav{padding:16px 20px}.nls{display:none}.ham{display:flex}.hero{padding:100px 20px 60px}.srg,.prg{grid-template-columns:1fr}.frow{grid-template-columns:1fr}.ftg{grid-template-columns:1fr}.ftbt{flex-direction:column;text-align:center}.skgrid{grid-template-columns:1fr}.in-nl{display:none}.in-fabs{bottom:20px;right:20px}.in-stats{gap:20px;flex-wrap:wrap}.isd{display:none}.in-btns{flex-direction:column}.stsg{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="sp-bar" id="spBar"></div>
+<div class="cd" id="cD"></div><div class="cr" id="cR"></div>
+
+<!-- SPLASH -->
+<div class="splash" id="splash">
+<div class="spo spo1"></div><div class="spo spo2"></div><div class="spo spo3"></div>
+<canvas id="spP"></canvas><div class="sp-noise"></div><div class="sp-grid"></div>
+<div class="sp-c">
+<div class="sp-avatar"><div class="sp-avatar-glow"></div><div class="sp-avatar-ring"></div><img src="assets/profile.jpg" alt="Muhammad Umair" loading="lazy" width="170" height="170"></div>
+<div class="sp-welcome">WELCOME TO THE PORTFOLIO OF</div>
+<h1 class="sp-name">MUHAMMAD UMAIR</h1>
+<p class="sp-role">IBM Maximo & SAP Specialist</p>
+<div class="sp-bw"><div class="sp-bg2"></div><button class="sp-btn" id="gsBtn">Enter Portfolio <span class="bi"><i class="fas fa-arrow-right"></i></span></button></div>
+</div>
+<div class="sp-ld" id="sLd">Loading portfolio<span class="dots"></span></div>
+<div class="sp-av" id="sAv"><div class="b"></div><div class="b"></div><div class="b"></div><div class="b"></div><div class="b"></div></div>
+</div>
+
+<!-- INTRO -->
+<div class="intro" id="intro">
+<canvas id="confC"></canvas>
+<nav class="in-nav">
+<div class="in-logo">MUHAMMAD UMAIR</div>
+<ul class="in-nl">
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li>
+<li><a href="#contact" class="in-hire">Hire Me</a></li>
+</ul>
+</nav>
+<div class="in-body">
+<div class="in-img">
+<div class="in-img-gl"></div><div class="in-img-b"></div>
+<div class="in-img-w"><img src="assets/profile.jpg" alt="Muhammad Umair" loading="lazy"></div>
+</div>
+<div class="in-txt">
+<div class="in-tag"><i class="fas fa-bolt"></i> Available for Consulting</div>
+<p class="in-desc">I'm a <span class="em">Techno-Functional Consultant</span> with 9+ years of expertise in <span class="em">IBM Maximo</span>, <span class="em">SAP PM/MM</span>, and Enterprise Asset Management. Recognized expert in BIRT Report development — including advanced Arabic RTL and bilingual reports for clients across Pakistan and Saudi Arabia.</p>
+<div class="in-btns">
+<button class="in-be" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})"><i class="fas fa-compass"></i> Explore My Work</button>
+<button class="in-bh" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})"><i class="fas fa-handshake"></i> Hire Me</button>
+<a href="Muhammad_Umair_CV.pdf" download class="dl-btn" onclick="playClick()"><i class="fas fa-download"></i> Download CV</a>
+</div>
+<div class="in-stats">
+<div><span class="isn">9+</span><span class="lbl">Years Exp</span></div><div class="isd"></div>
+<div><span class="isn">11+</span><span class="lbl">Projects</span></div><div class="isd"></div>
+<div><span class="isn">7</span><span class="lbl">Modules</span></div>
+</div>
+</div>
+</div>
+<div class="in-fabs">
+<a href="Muhammad_Umair_CV.pdf" download class="in-fab dl" aria-label="Download CV" onclick="playClick()"><i class="fas fa-download"></i></a>
+<a href="https://wa.me/923144226718" class="in-fab chat" aria-label="Chat on WhatsApp"><i class="fas fa-comment-dots"></i></a>
+</div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div class="mw" id="mainW">
+<div class="nov"></div><div class="grbg"></div><canvas id="ptc"></canvas>
+<div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div>
+<div class="toc" id="tC"></div>
+<button class="at on" id="aT" aria-label="Toggle audio"><div class="abs2"><span></span><span></span><span></span><span></span></div></button>
+<button class="btt" id="bTT" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<main class="mc">
+
+<nav class="nav" id="nb" role="navigation" aria-label="Main navigation">
+<a href="#" class="nlogo">M. Umair</a>
+<ul class="nls">
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li><li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact" class="ncta">Hire Me</a></li>
+</ul>
+<button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mm" id="mm"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Hire Me</a></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-c">
+<img src="assets/profile.jpg" alt="Muhammad Umair" class="hero-photo" loading="lazy" width="120" height="120">
+<div class="hb"><span class="dot"></span> Available for Consulting</div>
+<h1 class="ht">Hi, I'm <span class="g1">Muhammad</span><br><span class="g2">Umair</span></h1>
+<p class="hs">Techno-Functional Consultant & IBM Maximo Administrator with 9+ years of expertise in Enterprise Asset Management, SAP PM/MM, BIRT Reports (Arabic RTL), and system integrations across DB2, WebSphere, and Oracle environments.</p>
+<div class="hbtns">
+<button class="bp" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})"><i class="fas fa-paper-plane"></i> Hire Me</button>
+<button class="bs" onclick="document.querySelector('#projects').scrollIntoView({behavior:'smooth'})"><i class="fas fa-briefcase"></i> View Projects</button>
+</div>
+</div>
+</section>
+
+<!-- STATS -->
+<section class="sts" id="stats"><div class="stsg">
+<div class="stc rv" style="transition-delay:.1s"><span class="num counter" data-target="9">0</span><span class="lbl">Years Experience</span></div>
+<div class="stc rv" style="transition-delay:.2s"><span class="num counter" data-target="11">0</span><span class="lbl">Key Projects</span></div>
+<div class="stc rv" style="transition-delay:.3s"><span class="num counter" data-target="7">0</span><span class="lbl">Maximo Modules</span></div>
+<div class="stc rv" style="transition-delay:.4s"><span class="num counter" data-target="4">0</span><span class="lbl">Countries Served</span></div>
+</div></section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="abg">
+<div class="abi rvl" style="transition-delay:.1s"><img src="assets/profile.jpg" alt="Muhammad Umair" loading="lazy"></div>
+<div class="abt rvr" style="transition-delay:.2s">
+<span class="role">Techno-Functional Consultant | IBM Maximo & SAP Specialist</span>
+<h2>About Me</h2>
+<p>Experienced IBM Maximo Administrator & Techno-Functional Consultant with <strong style="color:var(--accent)">9+ years</strong> of expertise in Enterprise Asset Management systems. Specialist in IBM Maximo end-to-end administration, upgrades, and system integrations.</p>
+<p>Recognized expert in <strong style="color:var(--accent)">BIRT Report development</strong> for IBM Maximo — including advanced Arabic RTL (Right-to-Left) and bilingual Arabic/English reports, serving clients across Pakistan and Saudi Arabia. Adept at bridging technical architecture and business requirements across IBM DB2, WebSphere, Oracle EBS, and SAP environments.</p>
+<div class="info-row">
+<div class="info-item"><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</div>
+<div class="info-item"><i class="fas fa-envelope"></i> m.umairrana007@gmail.com</div>
+<div class="info-item"><i class="fas fa-phone"></i> +92-314-4226718</div>
+<div class="info-item"><i class="fas fa-language"></i> Urdu, English, Punjabi, Sindhi</div>
+</div>
+<div class="abs">
+<a href="mailto:m.umairrana007@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+<a href="tel:+923144226718" aria-label="Phone"><i class="fas fa-phone"></i></a>
+<a href="https://wa.me/923144226718" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mqs"><div class="mqt">
+<div class="mqi">IBM Maximo<span class="s"></span></div><div class="mqi">SAP PM/MM<span class="s"></span></div><div class="mqi">BIRT Reports<span class="s"></span></div><div class="mqi">Arabic RTL<span class="s"></span></div><div class="mqi">IBM DB2<span class="s"></span></div><div class="mqi">WebSphere<span class="s"></span></div><div class="mqi">Oracle EAM<span class="s"></span></div><div class="mqi">IoT Sensors<span class="s"></span></div><div class="mqi">Python<span class="s"></span></div><div class="mqi">Cognos BI<span class="s"></span></div>
+<div class="mqi">IBM Maximo<span class="s"></span></div><div class="mqi">SAP PM/MM<span class="s"></span></div><div class="mqi">BIRT Reports<span class="s"></span></div><div class="mqi">Arabic RTL<span class="s"></span></div><div class="mqi">IBM DB2<span class="s"></span></div><div class="mqi">WebSphere<span class="s"></span></div><div class="mqi">Oracle EAM<span class="s"></span></div><div class="mqi">IoT Sensors<span class="s"></span></div><div class="mqi">Python<span class="s"></span></div><div class="mqi">Cognos BI<span class="s"></span></div>
+</div></div>
+
+<!-- SKILLS -->
+<section id="skills" class="sts">
+<div class="sh rv"><div class="stag"><i class="fas fa-code"></i> Skills</div><h2 class="stl">Technical Expertise</h2></div>
+<div class="skgrid">
+<div class="skc rv" style="transition-delay:.1s"><h4><i class="fas fa-server"></i> IBM Maximo</h4><div class="skbar"><div class="skfill sf1" style="--w:98%"></div></div><p style="color:var(--td);font-size:.8rem">Administration, Upgrades, Configuration, 7 Modules Certified</p></div>
+<div class="skc rv" style="transition-delay:.15s"><h4><i class="fas fa-chart-bar"></i> BIRT Reports</h4><div class="skbar"><div class="skfill sf2" style="--w:95%"></div></div><p style="color:var(--td);font-size:.8rem">Arabic RTL, Bilingual, Complex Layouts, Sub-reports</p></div>
+<div class="skc rv" style="transition-delay:.2s"><h4><i class="fas fa-database"></i> IBM DB2 & WebSphere</h4><div class="skbar"><div class="skfill sf3" style="--w:92%"></div></div><p style="color:var(--td);font-size:.8rem">Performance Tuning, Backups, WAS Administration</p></div>
+<div class="skc rv" style="transition-delay:.25s"><h4><i class="fas fa-cogs"></i> SAP PM/MM</h4><div class="skbar"><div class="skfill sf4" style="--w:88%"></div></div><p style="color:var(--td);font-size:.8rem">Implementation, Configuration, UAT, Training</p></div>
+<div class="skc rv" style="transition-delay:.3s"><h4><i class="fas fa-network-wired"></i> Integrations</h4><div class="skbar"><div class="skfill sf5" style="--w:90%"></div></div><p style="color:var(--td);font-size:.8rem">Maximo ↔ Oracle EBS, IoT Sensors, Pentaho, APIs</p></div>
+<div class="skc rv" style="transition-delay:.35s"><h4><i class="fas fa-code"></i> Development</h4><div class="skbar"><div class="skfill sf6" style="--w:85%"></div></div><p style="color:var(--td);font-size:.8rem">Python, PHP, Laravel, Angular, Node.js, JavaScript</p></div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="sh rv"><div class="stag"><i class="fas fa-briefcase"></i> Experience</div><h2 class="stl">Professional Journey</h2></div>
+<div class="exl">
+<div class="exi rv" style="transition-delay:.1s"><div class="exdot"></div><div class="exc"><div class="date">Mar 2022 — Present</div><h3>IBM Maximo Administrator</h3><div class="company">Dollar Stationery Pvt Ltd. — Karachi</div>
+<ul>
+<li>Full administration of IBM Maximo Asset Management environment</li>
+<li>Manage IBM DB2 database — performance tuning, backups, maintenance</li>
+<li>Administer IBM WebSphere Application Server and Maximo Report Server</li>
+<li>Developed Maximo ↔ Oracle EBS integration using Python scripts</li>
+<li>Monitor and troubleshoot message reprocessing and integration queues</li>
+<li>User administration, security groups, and application configuration</li>
+</ul>
+</div></div>
+<div class="exi rv" style="transition-delay:.2s"><div class="exdot"></div><div class="exc"><div class="date">Nov 2015 — Mar 2022</div><h3>Techno-Functional Consultant</h3><div class="company">SysTech International (PVT) Ltd.</div>
+<ul>
+<li>IBM Maximo implementation, configuration & upgrades</li>
+<li>SAP Asset Management (PM Module) implementation</li>
+<li>IBM Cognos BI & Planning Analytics reporting</li>
+<li>Oracle Enterprise Asset Management & Oracle DB 11g/12c</li>
+<li>Infor MP2 & CalemEAM deployments</li>
+<li>IoT sensor integration with IBM Maximo & cloud platforms</li>
+<li>Expert-level BIRT Report development — Arabic RTL, bilingual reports</li>
+<li>Web development: PHP, Laravel, Angular, WordPress, Joomla</li>
+</ul>
+</div></div>
+<div class="exi rv" style="transition-delay:.3s"><div class="exdot"></div><div class="exc"><div class="date">Jun 2013 — Nov 2013</div><h3>Supervisor</h3><div class="company">Pakistan Red Crescent Medical Center</div>
+<p>Internal management, equipment procurement, staff supervision and reporting to Health Manager Sindh.</p>
+</div></div>
+<div class="exi rv" style="transition-delay:.4s"><div class="exdot"></div><div class="exc"><div class="date">Nov 2011 — Apr 2013</div><h3>Shelter Officer</h3><div class="company">Pakistan Red Crescent — IFRC</div>
+<p>Field assessment and support for flood-affected communities. Food distribution, humanitarian aid coordination, GPRS-based field documentation.</p>
+</div></div>
+</div>
+</section>
+
+<!-- EDUCATION & CERTIFICATIONS -->
+<section class="sts" id="education">
+<div class="sh rv"><div class="stag"><i class="fas fa-graduation-cap"></i> Education & Certifications</div><h2 class="stl">Academic Background</h2></div>
+<div class="edg">
+<div class="edc rv" style="transition-delay:.1s"><div class="edicon"><i class="fas fa-university"></i></div><div class="year">Feb 2014</div><h4>Bachelor of Commerce (B.Com)</h4><p>Allama Iqbal University</p></div>
+<div class="edc rv" style="transition-delay:.2s"><div class="edicon"><i class="fas fa-certificate"></i></div><div class="year">Dec 2021</div><h4>IBM Maximo Certification</h4><p>Asset Management — 7 Modules</p></div>
+<div class="edc rv" style="transition-delay:.3s"><div class="edicon"><i class="fab fa-microsoft"></i></div><div class="year">Apr 2020</div><h4>MCSA</h4><p>Microsoft System Administration</p></div>
+<div class="edc rv" style="transition-delay:.4s"><div class="edicon"><i class="fas fa-award"></i></div><div class="year">Dec 2017</div><h4>ACCP-Pro</h4><p>Aptech Computer Programmer Professional</p></div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<div class="sh rv"><div class="stag"><i class="fas fa-cube"></i> Services</div><h2 class="stl">What I Offer</h2><p class="sdesc">Enterprise-grade consulting services tailored to your asset management needs.</p></div>
+<div class="srg">
+<div class="src rv" style="transition-delay:.1s"><div class="sri" style="background:rgba(0,229,160,.1);color:var(--accent)"><i class="fas fa-server"></i></div><h3>IBM Maximo Administration</h3><p>End-to-end administration, upgrades (7.5 → 7.6.x), configuration, security, and performance tuning.</p><div class="ar"><i class="fas fa-arrow-right"></i></div></div>
+<div class="src rv" style="transition-delay:.2s"><div class="sri" style="background:rgba(74,108,247,.1);color:var(--g2)"><i class="fas fa-file-alt"></i></div><h3>BIRT Report Development</h3><p>Expert-level BIRT reports including Arabic RTL, bilingual Arabic/English, complex layouts, and sub-reports.</p><div class="ar"><i class="fas fa-arrow-right"></i></div></div>
+<div class="src rv" style="transition-delay:.3s"><div class="sri" style="background:rgba(139,92,246,.1);color:var(--g3)"><i class="fas fa-cogs"></i></div><h3>SAP PM/MM Implementation</h3><p>SAP Plant Maintenance and Materials Management module implementation, UAT, and end-user training.</p><div class="ar"><i class="fas fa-arrow-right"></i></div></div>
+<div class="src rv" style="transition-delay:.4s"><div class="sri" style="background:rgba(255,107,53,.1);color:var(--g5)"><i class="fas fa-network-wired"></i></div><h3>System Integration</h3><p>IBM Maximo ↔ Oracle EBS, IoT sensor integration, Pentaho, Python scripting, and API development.</p><div class="ar"><i class="fas fa-arrow-right"></i></div></div>
+<div class="src rv" style="transition-delay:.5s"><div class="sri" style="background:rgba(236,72,153,.1);color:var(--g4)"><i class="fas fa-database"></i></div><h3>Database Administration</h3><p>IBM DB2, Oracle DB, SQL Server — performance tuning, backups, upgrades, and restructuring.</p><div class="ar"><i class="fas fa-arrow-right"></i></div></div>
+<div class="src rv" style="transition-delay:.6s"><div class="sri" style="background:rgba(6,182,212,.1);color:var(--g6)"><i class="fas fa-satellite-dish"></i></div><h3>IoT Integration</h3><p>IoT sensor installation, cloud integration, automated work order generation from meter readings.</p><div class="ar"><i class="fas fa-arrow-right"></i></div></div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="sh rv"><div class="stag"><i class="fas fa-briefcase"></i> Projects</div><h2 class="stl">Key Projects</h2></div>
+<div class="prg">
+<div class="prc rv" style="transition-delay:.1s"><div class="prc-img"><img src="https://picsum.photos/seed/dollar-ind/700/440.jpg" alt="Dollar Industries Project" loading="lazy"></div><div class="prc-body"><span class="tag">Upgrade</span><h4>IBM Maximo Upgrade</h4><p>Upgraded Maximo 7.6.0.4 → 7.6.0.9 → 7.6.1.2, DB2 10.0 → 11.1, WebSphere 8.5 → 9.5, Linux 6.0 → 7.6. Reconfigured Oracle EBS integration via Pentaho.</p><div class="client"><i class="fas fa-building"></i> Dollar Industries Pvt Ltd. — Karachi</div></div></div>
+<div class="prc rv" style="transition-delay:.2s"><div class="prc-img"><img src="https://picsum.photos/seed/kaust-sa/700/440.jpg" alt="KAUST Project" loading="lazy"></div><div class="prc-body"><span class="tag">IoT</span><h4>IoT Integration — IBM Cloud</h4><p>IoT sensor installation and configuration on IBM Cloud. Automated work order generation from IoT meter readings.</p><div class="client"><i class="fas fa-building"></i> King Abdullah University (KAUST) — Saudi Arabia</div></div></div>
+<div class="prc rv" style="transition-delay:.3s"><div class="prc-img"><img src="https://picsum.photos/seed/engro-pk/700/440.jpg" alt="Engro Project" loading="lazy"></div><div class="prc-body"><span class="tag">IoT + Upgrade</span><h4>Maximo Upgrade & IoT Fleet</h4><p>Upgraded Maximo 7.5 → 7.6.0.9. Installed IoT sensors in fleet vehicles, integrated TPL Tracker API, automated work orders from meter alerts.</p><div class="client"><i class="fas fa-building"></i> Engro Polymer — Pakistan</div></div></div>
+<div class="prc rv" style="transition-delay:.4s"><div class="prc-img"><img src="https://picsum.photos/seed/ripha-med/700/440.jpg" alt="Ripha Medical Project" loading="lazy"></div><div class="prc-body"><span class="tag">SAP</span><h4>SAP PM & MM Implementation</h4><p>Implemented and configured SAP PM & MM Modules. Conducted UAT and end-user training for medical staff.</p><div class="client"><i class="fas fa-building"></i> Ripha Medical University & Hospital — Islamabad</div></div></div>
+<div class="prc rv" style="transition-delay:.5s"><div class="prc-img"><img src="https://picsum.photos/seed/uep-pk/700/440.jpg" alt="UEP Project" loading="lazy"></div><div class="prc-body"><span class="tag">Upgrade + Mobile</span><h4>Maximo Anywhere Deployment</h4><p>Upgraded Maximo 7.6.0.3 → 7.6.0.9, WebSphere 8.5.5 → 8.8.5.18. Installed IBM Maximo Anywhere for Android.</p><div class="client"><i class="fas fa-building"></i> United Energy Pakistan (UEP)</div></div></div>
+<div class="prc rv" style="transition-delay:.6s"><div class="prc-img"><img src="https://picsum.photos/seed/qict-pk/700/440.jpg" alt="QICT Project" loading="lazy"></div><div class="prc-body"><span class="tag">Deployment</span><h4>Maximo with Oracle Deployment</h4><p>Full IBM Maximo deployment with Oracle database. Custom BIRT report design and development.</p><div class="client"><i class="fas fa-building"></i> Qasim International Container Terminal (QICT)</div></div></div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<div class="sh rv"><div class="stag"><i class="fas fa-circle-question"></i> FAQ</div><h2 class="stl">Common Questions</h2></div>
+<div class="fqc">
+<div class="fqi on rv" style="transition-delay:.1s"><div class="fqq" onclick="tFaq(this)">What services do you offer?<div class="fqt"><i class="fas fa-plus"></i></div></div><div class="fqa"><p>IBM Maximo administration, BIRT Report development (including Arabic RTL), SAP PM/MM implementation, system integrations (Maximo ↔ Oracle EBS), IoT sensor integration, database administration (DB2, Oracle, SQL Server), and web development.</p></div></div>
+<div class="fqi rv" style="transition-delay:.15s"><div class="fqq" onclick="tFaq(this)">Which IBM Maximo versions have you worked with?<div class="fqt"><i class="fas fa-plus"></i></div></div><div class="fqa"><p>I have hands-on experience with Maximo 7.5, 7.6.0.3, 7.6.0.4, 7.6.0.9, and 7.6.1.2 — including end-to-end upgrades, administration, and IBM Maximo Anywhere mobile deployment.</p></div></div>
+<div class="fqi rv" style="transition-delay:.2s"><div class="fqq" onclick="tFaq(this)">Do you have experience with Arabic RTL reports?<div class="fqt"><i class="fas fa-plus"></i></div></div><div class="fqa"><p>Yes! I'm a recognized expert in BIRT Report development for IBM Maximo — including advanced Arabic RTL (Right-to-Left) and bilingual Arabic/English reports, serving clients across Pakistan and Saudi Arabia (including KAUST).</p></div></div>
+<div class="fqi rv" style="transition-delay:.25s"><div class="fqq" onclick="tFaq(this)">Can you handle IoT integrations?<div class="fqt"><i class="fas fa-plus"></i></div></div><div class="fqa"><p>Absolutely. I've deployed IoT sensors on IBM Cloud (KAUST Saudi Arabia) and integrated TPL Tracker API for fleet vehicles (Engro Polymer), with automated work order generation from meter alerts.</p></div></div>
+<div class="fqi rv" style="transition-delay:.3s"><div class="fqq" onclick="tFaq(this)">Which databases do you administer?<div class="fqt"><i class="fas fa-plus"></i></div></div><div class="fqa"><p>IBM DB2 (10.0, 11.1), Oracle DB (11g, 12c), and SQL Server (2008+). I handle performance tuning, backups, upgrades, and restructuring.</p></div></div>
+</div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--bg)">
+<div class="ctab rvs" style="opacity:0;transform:scale(.9);transition:all .8s cubic-bezier(.16,1,.3,1)">
+<h2>Let's Work Together</h2>
+<p>Need an IBM Maximo expert, BIRT report specialist, or SAP PM/MM consultant? Let's discuss how I can help your organization.</p>
+<button class="bp" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})"><i class="fas fa-paper-plane"></i> Get in Touch</button>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="sts" id="contact">
+<div class="sh rv"><div class="stag"><i class="fas fa-envelope"></i> Contact</div><h2 class="stl">Hire Me</h2></div>
+<div class="cgrid">
+<div class="cinfo rvl" style="transition-delay:.1s">
+<h3>Get in Touch</h3>
+<p>Ready to discuss your IBM Maximo, SAP, or Enterprise Asset Management project? Reach out and let's explore how I can add value to your organization.</p>
+<div class="cmeth">
+<div class="cm"><div class="ci"><i class="fas fa-envelope"></i></div><div><div class="lb">Email</div><div class="vl">m.umairrana007@gmail.com</div></div></div>
+<div class="cm"><div class="ci"><i class="fas fa-briefcase"></i></div><div><div class="lb">Work Email</div><div class="vl">muhammad.umair@dollar-stationery.com</div></div></div>
+<div class="cm"><div class="ci"><i class="fas fa-phone"></i></div><div><div class="lb">Phone / WhatsApp</div><div class="vl">+92-314-4226718</div></div></div>
+<div class="cm"><div class="ci"><i class="fas fa-location-dot"></i></div><div><div class="lb">Location</div><div class="vl">Karachi, Pakistan</div></div></div>
+</div>
+</div>
+<form class="cform rvr" style="transition-delay:.2s" onsubmit="hSub(event)" novalidate>
+<div class="frow"><div class="fgrp"><label>Name</label><input type="text" id="nm" placeholder="Your name" required><div class="err">Please enter your name</div></div>
+<div class="fgrp"><label>Email</label><input type="email" id="em" placeholder="your@email.com" required><div class="err">Please enter valid email</div></div></div>
+<div class="fgrp"><label>Phone</label><input type="tel" id="ph" placeholder="+92-XXX-XXXXXXX"></div>
+<div class="fgrp"><label>Service Needed</label><select id="sv" required><option value="">Select service...</option><option>IBM Maximo Administration</option><option>BIRT Report Development</option><option>SAP PM/MM Implementation</option><option>System Integration</option><option>Database Administration</option><option>IoT Integration</option><option>Other</option></select><div class="err">Please select a service</div></div>
+<div class="fgrp"><label>Project Details</label><textarea id="ms" placeholder="Tell me about your project..." required></textarea><div class="err">Please describe your project</div></div>
+<button type="submit" class="fsub"><span class="btx"><i class="fas fa-paper-plane"></i> Send Message</span><span class="spn"></span></button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="ftg">
+<div class="ftb"><span class="lo">MUHAMMAD UMAIR</span><p>Techno-Functional Consultant & IBM Maximo Specialist. Delivering enterprise-grade asset management solutions with 9+ years of expertise across Pakistan and Saudi Arabia.</p><div class="fts"><a href="mailto:m.umairrana007@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a><a href="tel:+923144226718" aria-label="Phone"><i class="fas fa-phone"></i></a><a href="https://wa.me/923144226718" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+<div class="ftc"><h4>Quick Links</h4><a href="#about">About Me</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#projects">Projects</a></div>
+<div class="ftc"><h4>Services</h4><a href="#services">IBM Maximo Admin</a><a href="#services">BIRT Reports (Arabic RTL)</a><a href="#services">SAP PM/MM</a><a href="#services">System Integration</a><a href="#services">IoT Integration</a></div>
+<div class="ftc"><h4>Contact</h4><a href="mailto:m.umairrana007@gmail.com">m.umairrana007@gmail.com</a><a href="tel:+923144226718">+92-314-4226718</a><a href="#">Karachi, Pakistan</a><a href="https://wa.me/923144226718">WhatsApp</a></div>
+</div>
+<div class="ftbt"><p>&copy; 2026 Muhammad Umair. All rights reserved. Built with <i class="fas fa-heart" style="color:var(--accent)"></i></p><div class="ftbl"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+</footer>
+</main>
+</div>
+</div>
+
+<script>
+let ac=null,ambP=false,ambN=[];
+function gAC(){if(!ac)ac=new(window.AudioContext||window.webkitAudioContext)();return ac}
+function playEntry(){const c=gAC();const ns=c.createBufferSource(),nb=c.createBuffer(1,c.sampleRate*.8,c.sampleRate),nd=nb.getChannelData(0);for(let i=0;i<nd.length;i++)nd[i]=(Math.random()*2-1)*.3;ns.buffer=nb;const nf=c.createBiquadFilter();nf.type='bandpass';nf.frequency.setValueAtTime(200,c.currentTime);nf.frequency.exponentialRampToValueAtTime(2000,c.currentTime+.5);const ng=c.createGain();ng.gain.setValueAtTime(0,c.currentTime);ng.gain.linearRampToValueAtTime(.2,c.currentTime+.1);ng.gain.exponentialRampToValueAtTime(.001,c.currentTime+.8);ns.connect(nf);nf.connect(ng);ng.connect(c.destination);ns.start(c.currentTime);ns.stop(c.currentTime+.8);const o=c.createOscillator(),og=c.createGain();o.type='sine';o.frequency.setValueAtTime(200,c.currentTime);o.frequency.exponentialRampToValueAtTime(800,c.currentTime+.6);og.gain.setValueAtTime(0,c.currentTime);og.gain.linearRampToValueAtTime(.1,c.currentTime+.15);og.gain.exponentialRampToValueAtTime(.001,c.currentTime+.7);o.connect(og);og.connect(c.destination);o.start(c.currentTime);o.stop(c.currentTime+.7);[523,659,784,1047].forEach((f,i)=>{const os=c.createOscillator(),gs=c.createGain();os.type='sine';os.frequency.setValueAtTime(f,c.currentTime+.3+i*.12);gs.gain.setValueAtTime(0,c.currentTime+.3+i*.12);gs.gain.linearRampToValueAtTime(.12,c.currentTime+.32+i*.12);gs.gain.exponentialRampToValueAtTime(.001,c.currentTime+.8+i*.12);os.connect(gs);gs.connect(c.destination);os.start(c.currentTime+.3+i*.12);os.stop(c.currentTime+1+i*.12)})}
+function playClick(){try{const c=gAC(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.type='sine';o.frequency.setValueAtTime(800,c.currentTime);o.frequency.exponentialRampToValueAtTime(400,c.currentTime+.1);g.gain.setValueAtTime(.1,c.currentTime);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.12);o.start(c.currentTime);o.stop(c.currentTime+.12)}catch(e){}}
+function playSucc(){try{const c=gAC();[523,659,784].forEach((f,i)=>{const o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.type='sine';o.frequency.setValueAtTime(f,c.currentTime+i*.12);g.gain.setValueAtTime(.08,c.currentTime+i*.12);g.gain.exponentialRampToValueAtTime(.001,c.currentTime+i*.12+.3);o.start(c.currentTime+i*.12);o.stop(c.currentTime+i*.12+.3)})}catch(e){}}
+function startAmb(){if(ambP)return;const c=gAC();[55,82,110,165].forEach(freq=>{const o=c.createOscillator(),g=c.createGain(),f=c.createBiquadFilter();o.connect(f);f.connect(g);g.connect(c.destination);o.type='sine';o.frequency.setValueAtTime(freq,c.currentTime);f.type='lowpass';f.frequency.setValueAtTime(180,c.currentTime);g.gain.setValueAtTime(0,c.currentTime);g.gain.linearRampToValueAtTime(.02,c.currentTime+2.5);o.start();ambN.push({osc:o,gain:g})});const lfo=c.createOscillator(),lG=c.createGain();lfo.frequency.setValueAtTime(.08,c.currentTime);lG.gain.setValueAtTime(3,c.currentTime);lfo.connect(lG);if(ambN[0])lG.connect(ambN[0].osc.frequency);lfo.start();ambN.push({osc:lfo,gain:lG});ambP=true;document.getElementById('aT').classList.add('on')}
+function stopAmb(){ambN.forEach(n=>{try{n.gain.gain.linearRampToValueAtTime(0,gAC().currentTime+1);setTimeout(()=>{try{n.osc.stop()}catch(e){}},1200)}catch(e){}});ambN=[];ambP=false;document.getElementById('aT').classList.remove('on')}
+document.getElementById('aT').addEventListener('click',()=>{ambP?stopAmb():startAmb();playClick()});
+
+let confR=false;
+function launchConf(){const cv=document.getElementById('confC'),cx=cv.getContext('2d');cv.width=window.innerWidth;cv.height=window.innerHeight;const cols=['#00e59a','#4a6cf7','#8b5cf6','#ec4899','#ff6b35','#06b6d4','#fbbf24','#ffffff'];let pcs=[];for(let i=0;i<150;i++)pcs.push({x:Math.random()*cv.width,y:Math.random()*cv.height-cv.height,w:Math.random()*10+4,h:Math.random()*6+2,color:cols[Math.floor(Math.random()*cols.length)],vy:Math.random()*2.5+.8,vx:(Math.random()-.5)*2.5,rot:Math.random()*360,rs:(Math.random()-.5)*10,op:Math.random()*.7+.3,sh:Math.random()>.5?'r':'c'});confR=true;function dr(){if(!confR)return;cx.clearRect(0,0,cv.width,cv.height);let alive=false;pcs.forEach(p=>{p.y+=p.vy;p.x+=p.vx;p.rot+=p.rs;if(p.y<cv.height+20)alive=true;cx.save();cx.translate(p.x,p.y);cx.rotate(p.rot*Math.PI/180);cx.globalAlpha=p.op;cx.fillStyle=p.color;if(p.sh==='r')cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);else{cx.beginPath();cx.arc(0,0,Math.max(.5,p.w/3),0,Math.PI*2);cx.fill()}cx.restore()});if(alive)requestAnimationFrame(dr);else{confR=false;cx.clearRect(0,0,cv.width,cv.height)}}dr()}
+
+!function(){const cv=document.getElementById('spP'),cx=cv.getContext('2d');let w,h,ps=[];function rs(){w=cv.width=window.innerWidth;h=cv.height=window.innerHeight}rs();window.addEventListener('resize',rs);for(let i=0;i<50;i++)ps.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.5+.3,dx:(Math.random()-.5)*.3,dy:(Math.random()-.5)*.3,o:Math.random()*.4+.1,c:Math.random()>.5?'0,229,160':'74,108,247'});!function dr(){cx.clearRect(0,0,w,h);ps.forEach(p=>{p.x+=p.dx;p.y+=p.dy;if(p.x<0||p.x>w)p.dx*=-1;if(p.y<0||p.y>h)p.dy*=-1;cx.beginPath();cx.arc(p.x,p.y,Math.max(.1,p.r),0,Math.PI*2);cx.fillStyle=`rgba(${p.c},${p.o})`;cx.fill()});for(let i=0;i<ps.length;i++)for(let j=i+1;j<ps.length;j++){const dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<120){cx.beginPath();cx.moveTo(ps[i].x,ps[i].y);cx.lineTo(ps[j].x,ps[j].y);cx.strokeStyle=`rgba(0,229,160,${.06*(1-d/120)})`;cx.lineWidth=.5;cx.stroke()}}requestAnimationFrame(dr)}()}();
+
+let mpI=false;
+function initMP(){if(mpI)return;mpI=true;const cv=document.getElementById('ptc'),cx=cv.getContext('2d');let w,h,ps=[],mx=0,my=0;function rs(){w=cv.width=window.innerWidth;h=cv.height=window.innerHeight}rs();window.addEventListener('resize',rs);document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});for(let i=0;i<70;i++)ps.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*1.8+.4,dx:(Math.random()-.5)*.35,dy:(Math.random()-.5)*.35,o:Math.random()*.4+.1,c:Math.random()>.5?'0,229,160':'0,184,255'});!function dr(){cx.clearRect(0,0,w,h);ps.forEach(p=>{p.x+=p.dx;p.y+=p.dy;const dx=p.x-mx,dy=p.y-my,d=Math.sqrt(dx*dx+dy*dy);if(d<120){const f=(120-d)/120*.4;p.x+=(dx/d)*f;p.y+=(dy/d)*f}if(p.x<0||p.x>w||p.y<0||p.y>h){p.x=Math.random()*w;p.y=Math.random()*h}cx.beginPath();cx.arc(p.x,p.y,Math.max(.1,p.r),0,Math.PI*2);cx.fillStyle=`rgba(${p.c},${p.o})`;cx.fill()});for(let i=0;i<ps.length;i++)for(let j=i+1;j<ps.length;j++){const dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<140){cx.beginPath();cx.moveTo(ps[i].x,ps[i].y);cx.lineTo(ps[j].x,ps[j].y);cx.strokeStyle=`rgba(0,229,160,${.05*(1-d/140)})`;cx.lineWidth=.5;cx.stroke()}}requestAnimationFrame(dr)}()}
+
+const splash=document.getElementById('splash'),intro=document.getElementById('intro'),mainW=document.getElementById('mainW'),gsBtn=document.getElementById('gsBtn'),sLd=document.getElementById('sLd'),sAv=document.getElementById('sAv');
+gsBtn.addEventListener('click',function(e){const r=this.getBoundingClientRect(),rip=document.createElement('span');rip.className='rip';const sz=Math.max(r.width,r.height);rip.style.width=rip.style.height=sz+'px';rip.style.left=(e.clientX-r.left-sz/2)+'px';rip.style.top=(e.clientY-r.top-sz/2)+'px';this.appendChild(rip);setTimeout(()=>rip.remove(),600);playEntry();sAv.classList.add('p');sLd.classList.add('v');this.style.pointerEvents='none';this.style.opacity='.6';setTimeout(()=>{splash.classList.add('exit');intro.classList.add('v');launchConf();startAmb();setTimeout(()=>{splash.style.display='none'},1000);setTimeout(()=>{intro.classList.add('exit');mainW.classList.add('v');initMP();setTimeout(()=>{intro.style.display='none'},1000)},4000)},2500)});
+
+const cD=document.getElementById('cD'),cR=document.getElementById('cR');let cmx=0,cmy=0,crx=0,cry=0;
+document.addEventListener('mousemove',e=>{cmx=e.clientX;cmy=e.clientY;cD.style.left=cmx-4+'px';cD.style.top=cmy-4+'px'});
+!function ar(){crx+=(cmx-crx)*.15;cry+=(cmy-cry)*.15;cR.style.left=crx-20+'px';cR.style.top=cry-20+'px';requestAnimationFrame(ar)}();
+document.querySelectorAll('a,button,.src,.fqq,.prc,input,textarea,select,.skc,.edc').forEach(el=>{el.addEventListener('mouseenter',()=>cR.classList.add('h'));el.addEventListener('mouseleave',()=>cR.classList.remove('h'))});
+
+window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('spBar').style.width=(window.scrollY/h*100)+'%'});
+
+const nb=document.getElementById('nb'),btt=document.getElementById('bTT');
+window.addEventListener('scroll',()=>{nb.classList.toggle('sc',window.scrollY>80);btt.classList.toggle('v',window.scrollY>500)});
+btt.addEventListener('click',()=>{playClick();window.scrollTo({top:0,behavior:'smooth'})});
+
+const ham=document.getElementById('ham'),mm=document.getElementById('mm');
+ham.addEventListener('click',()=>{ham.classList.toggle('on');mm.classList.toggle('on');playClick()});
+mm.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{ham.classList.remove('on');mm.classList.remove('on')}));
+
+const rO=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('active')}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.rv,.rvl,.rvr,.rvs').forEach(el=>rO.observe(el));
+
+let cDn=false;const cOb=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&!cDn){cDn=true;document.querySelectorAll('.counter').forEach(c=>{const t=parseInt(c.dataset.target),s=t/120;let cur=0;const ti=setInterval(()=>{cur+=s;if(cur>=t){cur=t;clearInterval(ti)}c.textContent=Math.floor(cur)+'+'},16)})}})},{threshold:.5});
+document.querySelectorAll('.counter').forEach(c=>cOb.observe(c));
+
+function tFaq(el){playClick();const it=el.parentElement,w=it.classList.contains('on');document.querySelectorAll('.fqi').forEach(f=>f.classList.remove('on'));if(!w)it.classList.add('on')}
+
+function showToast(m){const c=document.getElementById('tC'),t=document.createElement('div');t.className='tst';t.innerHTML=`<i class="fas fa-check-circle"></i> ${m}`;c.appendChild(t);playSucc();setTimeout(()=>{t.classList.add('rm');setTimeout(()=>t.remove(),400)},4000)}
+
+function hSub(e){e.preventDefault();let valid=true;
+['nm','em','ms','sv'].forEach(id=>{const grp=document.getElementById(id).closest('.fgrp');grp.classList.remove('inv')});
+const nm=document.getElementById('nm'),em=document.getElementById('em'),ms=document.getElementById('ms'),sv=document.getElementById('sv');
+if(!nm.value.trim()){nm.closest('.fgrp').classList.add('inv');valid=false}
+if(!em.value.trim()||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value)){em.closest('.fgrp').classList.add('inv');valid=false}
+if(!ms.value.trim()){ms.closest('.fgrp').classList.add('inv');valid=false}
+if(!sv.value){sv.closest('.fgrp').classList.add('inv');valid=false}
+if(!valid){playClick();return}
+const btn=e.target.querySelector('.fsub');btn.classList.add('ld');
+setTimeout(()=>{btn.classList.remove('ld');playSucc();showToast(`Thanks ${nm.value}! Message sent successfully.`);e.target.reset()},1500)}
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'})})});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){ham.classList.remove('on');mm.classList.remove('on')}});
+</script>
+</body>
+</html>
